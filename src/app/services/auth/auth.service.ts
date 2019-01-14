@@ -14,7 +14,7 @@ export class AuthService {
     clientID: '2u4D0t3ZrRYEIEWZt45EMOELnDLRVpLh',
     domain: 'creatur.auth0.com',
     responseType: 'token id_token',
-    redirectUri: 'http://localhost:3000/callback',
+    redirectUri: 'http://localhost:4200/callback',
     scope: 'openid'
   });
 
