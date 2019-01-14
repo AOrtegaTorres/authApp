@@ -6,6 +6,9 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { PriceComponent } from './components/price/price.component';
 import { ProtectedComponent } from './components/protected/protected.component';
+import { APP_ROUTING } from './app.routes';
+
+import { AuthService } from './services/auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -16,9 +19,12 @@ import { ProtectedComponent } from './components/protected/protected.component';
     ProtectedComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
